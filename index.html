@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>موقع سياحي - شمال تركيا</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        direction: rtl;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      header {
+        background: linear-gradient(to bottom, #2c3e50, #3498db);
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+
+      nav {
+        background-color: #34495e;
+        font-size: 35px;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        border: 3px solid #2c3e50;
+        border-radius: 38px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: fit-content;
+        margin: 0 auto;
+        margin: 0 20px;
+        font-size: 29px;
+        padding: 10px;
+      }
+
+      nav a:hover {
+        color: #3498db;
+        cursor: pointer;
+      }
+
+      .hero {
+        background-image: url("./images/4_trabzon-uzungol-group-tour-explore-the-nature-taste-tea.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+
+      .hero h2 {
+        font-size: 3em;
+        padding-top: 120px;
+      }
+
+      .destinations-section {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+
+      .destinations-section h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #2c3e50;
+      }
+
+      .destination-card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+      .destination-card img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .destination-content {
+        padding: 20px;
+        flex: 1;
+      }
+
+      .destination-content h3 {
+        color: #3498db;
+        margin-bottom: 10px;
+      }
+
+      .destination-content p {
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+
+      .contact-section {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .contact-section h2 {
+        margin-bottom: 20px;
+        color: #2c3e50;
+      }
+
+      .social-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+      }
+
+      .social-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 24px;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 1.1em;
+        transition: background-color 0.3s, transform 0.2s;
+        width: 200px;
+        text-align: center;
+      }
+
+      .social-button i {
+        margin-left: 10px;
+        font-size: 1.3em;
+      }
+
+      .whatsapp-button {
+        background-color: #25d366;
+      }
+
+      .whatsapp-button:hover {
+        background-color: #20b358;
+        transform: translateY(-2px);
+      }
+
+      .airbnb-button {
+        background-color: #ff5a5f;
+      }
+
+      .airbnb-button:hover {
+        background-color: #e04e52;
+        transform: translateY(-2px);
+      }
+
+      .google-maps-button {
+        background-color: #4285f4;
+      }
+
+      .google-maps-button:hover {
+        background-color: #357ae8;
+        transform: translateY(-2px);
+      }
+
+      footer {
+        background-color: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+
+      @media (max-width: 768px) {
+        .destination-card {
+          flex-direction: column;
+        }
+
+        .destination-card img {
+          width: 100%;
+          height: 250px;
+        }
+
+        .social-button {
+          width: 100%;
+          max-width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>GunMavi Travel Tourism</h1>
+      <h2>مرحبًا بكم في شمال تركيا</h2>
+    </header>
+
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#destinations">الوجهات</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+
+    <section class="hero">
+      <h2>استمتع بجمال الطبيعة في شمال تركيا</h2>
+    </section>
+
+    <section class="destinations-section" id="destinations">
+      <h2 style="font-size: 50px">وجهات سياحية مميزة</h2>
+      <div class="destination-card">
+        <img src="./images/trabzon.jpg" alt="طرابزون" />
+        <div class="destination-content">
+          <h3 style="font-size: 40px">طرابزون</h3>
+          <p>
+            مدينة ساحلية خلابة على البحر الأسود، تشتهر بتاريخها العريق وطبيعتها
+            الساحرة. تضم دير سوميلا التاريخي وقلعة طرابزون، بالإضافة إلى أسواقها
+            النابضة بالحياة.
+          </p>
+          <p>
+            <strong>الأنشطة:</strong> زيارة دير سوميلا، التجول في البازار،
+            استكشاف هضبة حيدر نبي.
+          </p>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="./images/156.webp" alt="أوزونغول" />
+        <div class="destination-content">
+          <h3 style="font-size: 40px">أوزونغول</h3>
+          <p>
+            قرية ساحرة تحيط بها الجبال الخضراء وبحيرة أوزونغول الخلابة. مكان
+            مثالي لعشاق الطبيعة والهدوء.
+          </p>
+          <p>
+            <strong>الأنشطة:</strong> المشي حول البحيرة، ركوب الدراجات، ركوب
+            الطائرة الشراعية.. الخ.
+          </p>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="./images/ayder-izmirlim-ayder-yaylasi-7.jpg" alt="أيدر" />
+        <div class="destination-content">
+          <h3 style="font-size: 40px">أيدر</h3>
+          <p>
+            هضبة أيدر تشتهر بغاباتها الكثيفة، شلالاتها الرائعة، وينابيعها
+            الحرارية. وجهة مثالية للاسترخاء والاستمتاع بالمناظر الطبيعية.
+          </p>
+          <p>
+            <strong>الأنشطة:</strong> زيارة الينابيع الحرارية، المشي في المسارات
+            الطبيعية، تذوق العسل المحلي.
+          </p>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img
+          src="./images/442422936_1163274114830488_4846052775749298762_n.jpg"
+          alt=""
+        />
+        <div class="destination-content">
+          <h3 style="font-size: 40px">ريزا</h3>
+          <p>
+            تلال ريزا الساحره و مزارع الشاي الخضراء الممتده على تلالها مع منظر
+            الغيوم
+          </p>
+          <p>
+            <strong>الأنشطة:</strong> زياره مزارع الشاي و الاستمتاع بالمناظر
+            الساخره و الهدوء في احضان الطبيعة
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>تواصل معنا</h2>
+      <div class="social-buttons">
+        <a
+          href="https://wa.me/+905010751006?text=مرحبًا، أرغب في الاستفسار عن السياحة في شمال تركيا"
+          class="social-button whatsapp-button"
+          target="_blank"
+        >
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a
+          href="https://ar.airbnb.com/rooms/1381261107803860139?viralityEntryPoint=1&unique_share_id=B3BA0CD3-DE80-4D44-BBD9-EE1298A04DA0&slcid=bed188fd27c34964aefc707aff132864&s=76&feature=share&adults=1&channel=native&slug=JlTXH3wO&_set_bev_on_new_domain=1704793289_NzVjODE3NDhlMTRh&source_impression_id=p3_1746817035_P3lab87-hqxFhoqD"
+          class="social-button airbnb-button"
+          target="_blank"
+        >
+          <i class="fab fa-airbnb"></i> Airbnb
+        </a>
+        <a
+          href="https://www.google.com/maps/place/G%C3%BCn+Apart/@40.9918953,39.7797571,17z/data=!3m1!4b1!4m6!3m5!1s0x40643bdc811d0507:0xaea8b80c1bf479bb!8m2!3d40.9918953!4d39.7797571!16s%2Fg%2F11h4cgf8td?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoASAFQAw%3D%3D"
+          class="social-button google-maps-button"
+          target="_blank"
+        >
+          <i class="fas fa-map-marker-alt"></i> Google Maps
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>جميع الحقوق محفوظة © 2025 الموقع السياحي</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
